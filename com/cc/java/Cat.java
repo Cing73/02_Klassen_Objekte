@@ -1,0 +1,14 @@
+package com.cc.java;
+
+public class Cat {
+
+    public String name;
+
+
+    
+    public void tellYourAddress() {
+        System.out.println("Blick von innen: " + this);
+    }
+
+
+}
