@@ -1,23 +1,19 @@
 package com.cc.java;
 
 public class App {
+   
+ public static void main(String[] args) {
+
+    Cat cat = new Cat("Grizabella", 29);
+    System.out.println(cat.tellYourName());
+    System.out.println(cat.tellYourAge());
     
-   public static void main(String[] args) {
+    System.out.println("------------------");
 
-   Cat cat = new Cat();
-   System.out.println(cat.name);
-   
-   
-   // System.out.println("Blick von aussen: " + cat);
-   // cat.tellYourAddress();
+    Cat cat1 = new Cat("Alonzo", 35);
+    System.out.println(cat1.tellYourName());
+    System.out.println(cat1.tellYourAge());
 
-   // Cat cat1 = new Cat();
-   // System.out.println("Blick von aussen: " + cat1);
-   // cat1.tellYourAddress();
-
-      // System.out.println("hi");
-   }
-
+ }
 
 }
-
