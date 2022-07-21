@@ -13,13 +13,15 @@ public class Cat {
     /* Getter */
 
     public String getName() {
-        if (getPermission()) {
+        if (getPermission()) 
+        {
             return name;
         } 
-        else {
+        else 
+        {
             return "Sorry, no permission!";
         }
-        }
+    }
 
     public int getAge() {
         return age;
