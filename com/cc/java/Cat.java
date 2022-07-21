@@ -2,24 +2,40 @@ package com.cc.java;
 
 public class Cat {
     
-    public String name;
-    public int age; 
+    private String name;
+    private int age; 
 
     public Cat(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    public void tellYourAddress() {
-      System.out.println("Blick von innen: " + this);  
+    /* Getter */
+
+    public String getName() {
+        if (getPermission()) {
+            return name;
+        } 
+        else {
+            return "Sorry, no permission!";
+        }
+        }
+
+    public int getAge() {
+        return age;
     }
 
-    public String tellYourName() {
-        return this.name;
+    /* Setter */
+
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int tellYourAge() {
-        return this.age;   
+    public void setAge(int age) {
+        this.age = age;
     }
 
+    private boolean getPermission() {
+        return true;
+    }
 }
